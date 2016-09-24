@@ -1,7 +1,9 @@
 ## Function cacheSolve returns a matrix that is the inverse of its argument 'x' (also a matrix).
 ## cacheSolve makes use of 4 functions created by function makeCachematrix. 
 
-## Function makeCacheMatrix creates an object with an attached list of 4 functions. These functions set and retrieve values of x and cachedMatrix. Values of x and cachedMatrix are stored in the parent environement. 
+## Function makeCacheMatrix creates an object with an attached list of 4 functions. 
+## These functions set and retrieve values of x and cachedMatrix. 
+## Values of x and cachedMatrix are stored in the parent environement. 
 
 makeCacheMatrix <- function(x = matrix()) {
       cachedMatrix <- NULL
@@ -23,7 +25,11 @@ makeCacheMatrix <- function(x = matrix()) {
 }
            
 
-## Function cacheSolve returns a matrix that is the inverse of its argument 'x'. If the cache does not contain any value, cacheSolve calculate the inverse of matrix x and store it in cache. If the cache contains a value, cacheSolve just retrieves the value of the inverse matrix stored in the cache. The inverse matrix is then displayed. 
+## Function cacheSolve returns a matrix that is the inverse of its argument 'x'. 
+## If the cache does not contain any value, cacheSolve calculate the inverse 
+## of matrix x and store it in cache. If the cache contains a value, cacheSolve just 
+## retrieves the value of the inverse matrix stored in the cache. 
+## The inverse matrix is then displayed. 
 
 cacheSolve <- function(x, ...) {          
         
